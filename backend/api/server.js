@@ -1,15 +1,15 @@
 import express from "express";
-import { connectDB } from "./config/db.js";
+import { connectDB } from "../config/db.js";
 import dotenv from 'dotenv';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import authRoutes from "./routes/auth.route.js";
-import messagesRoutes from "./routes/messages.route.js";
-import postsRoutes from "./routes/posts.route.js";
+import authRoutes from "../routes/auth.route.js";
+import messagesRoutes from "../routes/messages.route.js";
+import postsRoutes from "../routes/posts.route.js";
 
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { app, server } from "./config/socket.js";
+import { app, server } from "../config/socket.js";
 
 
 
