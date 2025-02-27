@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useHomeStore } from "../../store/home.store";
-import { TfiWrite } from "react-icons/io5"";
+import { TfiWrite } from "react-icons/io5";
 import { IoArrowRedoOutline } from "react-icons/io5";
 
 const AddPosts = () => {
