@@ -12,15 +12,15 @@ import { fileURLToPath } from 'url';
 import { app, server } from "./config/socket.js";
 
 
-
-
-
 dotenv.config();
 // OR allow all origins (for development purposes)
+
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://my-chatext-client.vercel.app", // Ensure HTTPS and full URL
         credentials: true,
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
     })
 );
 
