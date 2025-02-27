@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAuthStore } from "../../store/auth.store";
-import { IoMdCamera } from "react-icons/io";
+// import { IoMdCamera } from "react-icons/io";
 
 import Users from "./Users";
 
@@ -66,7 +66,7 @@ const Sidebar = () => {
               className="btn btn-primary btn-sm rounded-circle d-flex align-items-center justify-content-center shadow"
               style={{ width: "35px", height: "35px", cursor: "pointer" }}
             >
-              <IoMdCamera />
+              
               <input
                 type="file"
                 accept="image/*"
