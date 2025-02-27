@@ -2,7 +2,7 @@ import React from "react";
 import { useAuthStore } from "../store/auth.store";
 import { Link, useNavigate } from "react-router-dom";
 import { IoChatbubbleOutline } from "react-icons/io5";
-import { TbLogout2 } from "react-icons/tb";
+import { TbLogout2 } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
 import { useAuth } from "../context/AuthContext";
 
