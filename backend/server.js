@@ -53,7 +53,7 @@ app.use('/post-pics', express.static(path.join(__dirname, 'uploaded', 'posts')))
 // }
 
 const startServer = async () => {
-    // await connectDB();
+    await connectDB();
 
     // Use routes endpoints-----
     app.use("/api/auth", authRoutes)
