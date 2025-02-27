@@ -11,6 +11,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { app, server } from "./config/socket.js";
 
+import { createServer } from "@vercel/node";
+
 
 
 
@@ -65,7 +67,7 @@ const startServer = async () => {
 };
 startServer();
 
-
+export default createServer(app);
 
 
 
