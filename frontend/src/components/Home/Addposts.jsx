@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useHomeStore } from "../../store/home.store";
-import { TfiWrite } from "react-icons/tfi";
+// import { TfiWrite } from "react-icons/tfi";
 
-import { IoArrowRedoOutline } from "react-icons/io";
+// import { IoArrowRedoOutline } from "react-icons/io";
 
 const AddPosts = () => {
   const { addPosts } = useHomeStore();
@@ -70,7 +70,7 @@ const AddPosts = () => {
           {" "}
           {/* Smaller padding */}
           <h5 className="card-title fs-6 text-success">
-            <IoArrowRedoOutline /> Create a Post <TfiWrite />
+            Create a Post 
           </h5>{" "}
           {/* Smaller font size */}
           <form onSubmit={handleSubmit}>
