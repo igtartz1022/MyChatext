@@ -14,6 +14,7 @@ import { app, server } from "./config/socket.js";
 
 dotenv.config();
 // OR allow all origins (for development purposes)
+app.options("*", cors());
 
 app.use(
     cors({
