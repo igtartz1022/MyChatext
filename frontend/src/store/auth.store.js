@@ -125,6 +125,10 @@ export const useAuthStore = create(
                         body: JSON.stringify(info),
                     });
 
+                    if (!res.ok) {
+            const errorData = await res.json(); // Get error message from the backend
+            throw new Error(errorData.message || "Failed to sign up");
+        }
                     const data = await res.json()
                     set({ authUser: data });
                     console.log("Signed up successfuly!")
